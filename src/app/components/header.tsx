@@ -10,7 +10,7 @@ export const Header = () => {
     return (
         <header className="sticky top-0 z-50">
             <div className="">
-                <div className="flex items-center justify-between rounded-2xl bg-white p-3 shadow dark:bg-black dark:shadow-dark">
+                <div className="flex items-center justify-between rounded-2xl bg-white p-3 shadow dark:bg-black dark:shadow-dark dark:border-b-primary dark:border-b-[0.5px] dark:border-opacity-50">
                     <a href="index.html" className="inline-flex items-center gap-3 px-3 text-2xl font-semibold text-dark dark:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="h-6 w-6">
                             <path fill="currentColor" d="M0 1.5A1.5 1.5 0 0 1 1.5 0H9a1.5 1.5 0 0 1 1.5 1.5v21A1.5 1.5 0 0 1 9 24H1.5A1.5 1.5 0 0 1 0 22.5v-21Zm13.5 0A1.5 1.5 0 0 1 15 0h7.5A1.5 1.5 0 0 1 24 1.5V9a1.5 1.5 0 0 1-1.5 1.5H15A1.5 1.5 0 0 1 13.5 9V1.5Zm0 13.5a1.5 1.5 0 0 1 1.5-1.5h7.5A1.5 1.5 0 0 1 24 15v7.5a1.5 1.5 0 0 1-1.5 1.5H15a1.5 1.5 0 0 1-1.5-1.5V15Z" />
@@ -22,7 +22,7 @@ export const Header = () => {
                     <ul className="hidden flex-1 flex-wrap items-center justify-center lg:flex">
                         <li className="group">
                             <Link
-                                className={`group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium transition hover:bg-secondary hover:text-dark group-active:bg-active dark:hover:bg-dark-2 dark:group-active:bg-dark-2 dark:hover:text-white ${pathname === '/' ? 'text-black bg-secondary hover:bg-secondary dark:text-white hover:text-dark dark:hover:text-white dark:bg-dark-2' : 'text-muted hover:text-dark dark:hover:text-white dark:hover:bg-dark-2 '
+                                className={`group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium transition hover:bg-secondary hover:text-dark group-active:bg-active dark:hover:bg-dark-2 dark:group-active:bg-dark-2 dark:group-hover:text-primary dark:hover:text-white ${pathname === '/' ? 'text-black bg-secondary hover:bg-secondary dark:text-primary hover:text-dark dark:hover:text-white dark:bg-dark-2' : 'text-muted hover:text-dark dark:hover:text-white dark:hover:bg-dark-2 '
                                     }`}
                                 href="/"
                             >
@@ -34,7 +34,7 @@ export const Header = () => {
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth="1.2"
-                                    className={`h-6 w-6 transition group-hover:text-black dark:group-hover:text-white ${pathname === '/' ? 'group-active:hover:text-white text-black dark:text-white dark:hover:text-white' : 'text-[#8991A7] dark:text-[#8991A7] dark:hover:text-white'}`}
+                                    className={`h-6 w-6 transition group-hover:text-black dark:group-hover:text-primary ${pathname === '/' ? 'group-active:hover:text-white text-black dark:text-primary dark:hover:text-white' : 'text-[#8991A7] dark:text-[#8991A7] dark:hover:text-white'}`}
                                 >
                                     <path d="M15.833 7.258 11.39 3.802a2.222 2.222 0 0 0-2.728 0L4.216 7.258a2.22 2.22 0 0 0-.858 1.754v6a1.667 1.667 0 0 0 1.667 1.667h10a1.667 1.667 0 0 0 1.667-1.666v-6c0-.686-.317-1.334-.859-1.755Z" />
                                     <path d="M13.333 12.5c-1.841 1.11-4.826 1.11-6.667 0" />
@@ -45,7 +45,7 @@ export const Header = () => {
 
                         <li className="group">
                             <Link
-                                className={`group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium transition hover:bg-secondary hover:text-dark group-active:bg-active dark:hover:bg-dark-2 dark:group-active:bg-dark-2 dark:hover:text-white ${pathname === '/about' ? 'text-black bg-secondary hover:bg-secondary dark:text-white hover:text-dark dark:hover:text-white dark:bg-dark-2' : 'text-muted hover:text-dark dark:hover:text-white dark:hover:bg-dark-2 '
+                                className={`group inline-flex items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium transition hover:bg-secondary hover:text-dark group-active:bg-active dark:hover:bg-dark-2 dark:group-active:bg-dark-2 dark:group-hover:text-primary dark:hover:text-white ${pathname === '/about' ? 'text-black bg-secondary hover:bg-secondary dark:text-primary hover:text-dark dark:hover:text-white dark:bg-dark-2' : 'text-muted hover:text-dark dark:hover:text-white dark:hover:bg-dark-2 '
                                     }`}
                                 href="/about"
                             >
@@ -54,7 +54,7 @@ export const Header = () => {
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     strokeWidth="1.2"
-                                    className={`h-6 w-6 transition group-hover:text-black dark:group-hover:text-white ${pathname === '/about' ? 'group-active:hover:text-white text-black dark:text-white dark:hover:text-white' : 'text-[#8991A7] dark:text-[#8991A7] dark:hover:text-white'}`}
+                                    className={`h-6 w-6 transition group-hover:text-black dark:group-hover:text-primary ${pathname === '/about' ? 'group-active:hover:text-white text-black dark:text-primary dark:hover:text-white' : 'text-[#8991A7] dark:text-[#8991A7] dark:hover:text-white'}`}
                                 >
                                     <path d="M10.5 10.833a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
                                     <path d="M10.5 2.5c6 0 7.5 1.5 7.5 7.5s-1.5 7.5-7.5 7.5S3 16 3 10s1.5-7.5 7.5-7.5Z" />

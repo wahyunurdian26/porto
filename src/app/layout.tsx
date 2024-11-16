@@ -4,6 +4,7 @@ import { Swiper } from "swiper/react";
 import { DarkModeProvider } from './context/darkmodecontext';
 import 'swiper/css';
 import { Header } from "./components/header";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: process.env.NEXT_APP_NAME,
@@ -29,6 +30,7 @@ export default function RootLayout({
           <div className="mx-auto flex max-w-screen-2xl flex-col justify-between gap-4 p-4 lg:gap-6 lg:p-6">
             <Header />
             {children}
+            <SpeedInsights />
           </div>
         </body>
       </DarkModeProvider>
