@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import plugin from 'tailwindcss/plugin';
+import plugin from "tailwindcss/plugin";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -12,12 +12,12 @@ export default {
     extend: {
       keyframes: {
         scrollY: {
-          '0%': { transform: 'translateY(0)' },
-          '100%': { transform: 'translateY(calc(-100% - 1rem))' },
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(calc(-100% - 1rem))" },
         },
       },
       animation: {
-        scrollY: 'scrollY 10s linear infinite',
+        scrollY: "scrollY 10s linear infinite",
       },
       colors: {
         primary: "rgb(0, 220, 130)",
@@ -30,13 +30,13 @@ export default {
       },
     },
   },
-  darkMode: 'class',
+  darkMode: "class",
   plugins: [
-    require('tailwindcss-animated'),
+    require("tailwindcss-animated"),
     plugin(function ({ addUtilities }) {
       addUtilities({
-        '.group:hover .group-hover\\:animation-paused': {
-          animationPlayState: 'paused',
+        ".group:hover .group-hover\\:animation-paused": {
+          animationPlayState: "paused",
         },
       });
     }),

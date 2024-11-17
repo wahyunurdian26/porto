@@ -15,7 +15,7 @@ const profiles: InterfaceProfile = {
   title: "Full Stack Developer",
   description: "A Passionate Full Stack Developer",
   email: "wahyunurdian98@gmail.com",
-  image: "/assets/images/me.png",
+  image: "/assets/images/me.jpg",
 };
 
 const works: InterfaceWorkExperience[] = [
