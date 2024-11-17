@@ -10,14 +10,13 @@ export const metadata: Metadata = {
   description: "My Portfolio",
 };
 
-const profiles: InterfaceProfile =
-{
-  name: "Bayuda Pradani",
+const profiles: InterfaceProfile = {
+  name: "Wahyu Nurdian",
   title: "Full Stack Developer",
-  description: "A Passionate Full Stack Developer & Product Designer having 12 years of Experiences over 24+ Country Worldwide.",
-  email: "yudhanono@gmail.com",
+  description: "A Passionate Full Stack Developer",
+  email: "wahyunurdian98@gmail.com",
   image: "/assets/images/me.png",
-}
+};
 
 const works: InterfaceWorkExperience[] = [
   {
@@ -47,7 +46,7 @@ const works: InterfaceWorkExperience[] = [
     startDate: "2024",
     endDate: "2025",
     imageCompany: "/assets/images/logo/figma.svg",
-  }
+  },
 ];
 
 export default function Home() {
@@ -59,7 +58,9 @@ export default function Home() {
 
       <div className="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <h3 className="text-2xl font-semibold dark:text-light">Recent Projects</h3>
+          <h3 className="text-2xl font-semibold dark:text-light">
+            Recent Projects
+          </h3>
           {/* <a href="portfolio.html" className="inline-flex items-center justify-center gap-2 border-b text-center text-base text-primary transition hover:border-b-primary dark:border-b-muted dark:hover:border-b-primary">
             <span>All Projects</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" className="h-5 w-5">
@@ -111,8 +112,8 @@ export default function Home() {
       <Service />
       <div className="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
         <div className="animate-marquee whitespace-nowrap overflow-hidden text-nowrap rounded-lg bg-light p-3 text-lg font-medium text-white dark:bg-dark-2">
-          Available For Hire 🚀 Crafting Digital Experiences 🎨 Available For Hire 🚀
-          Crafting Digital Experiences 🎨
+          Available For Hire 🚀 Crafting Digital Experiences 🎨 Available For
+          Hire 🚀 Crafting Digital Experiences 🎨
         </div>
 
         {/* <h2 className="mt-4 text-[40px] font-semibold leading-snug text-dark dark:text-light">
